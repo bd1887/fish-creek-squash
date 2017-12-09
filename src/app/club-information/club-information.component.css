@@ -1,0 +1,26 @@
+
+.red-line {
+  border-color: #d9534f;
+  width: 100%;;
+}
+
+.map-container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.hours-header {
+  margin-left: auto;
+  margin-right: auto;
+}
+.hours-table {
+
+}
+
+iframe {
+  width:100%;
+  height:auto;
+  frameborder: 0;
+  border: 0;
+}

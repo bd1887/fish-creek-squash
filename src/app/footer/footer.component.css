@@ -1,0 +1,18 @@
+.footer-container {
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.footer-small {
+  display: none;
+}
+
+@media screen and (max-width: 770px) {
+  .footer-large {
+    display: none;
+  }
+  .footer-small {
+    display: block;
+  }
+}

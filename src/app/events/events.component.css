@@ -1,0 +1,15 @@
+
+.event-listing-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: green;
+}
+.event-item {
+  text-align: center;
+}
+
+@media screen and (max-width: 770px) {
+  .event-item {
+    padding: 3px 0 3px 0;
+  }
+}

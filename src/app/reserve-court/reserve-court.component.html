@@ -1,0 +1,39 @@
+<div [@fadeInAnimation]="''" class="container-fluid content-container">
+  <h1>Make a Reservation</h1>
+  <p>As a member of Fish Creek Squash Club, you enjoy the privilege of being able to make a reservation online!</p>
+  <p>You are limited to one one-hour reservation at a time.</p>
+  <p>Go ahead. Try it.</p>
+  <hr class="red-line">
+
+
+  <form class="custom-form">
+    <div class="form">
+      <label for="reserveDate">Reservation Date</label>
+      <input type="date" class="form-control" id="reserveDate" placeholder="Example input">
+    </div>
+    <div class="form-group">
+      <label for="reserveHour">Reservation Time</label>
+      <select class="form-control" id="reserveHour">
+        <option>8:00</option>
+        <option>9:00</option>
+        <option>10:00</option>
+        <option>11:00</option>
+        <option>12:00</option>
+        <option>13:00</option>
+        <option>14:00</option>
+        <option>15:00</option>
+        <option>16:00</option>
+        <option>17:00</option>
+        <option>18:00</option>
+        <option>19:00</option>
+        <option>20:00</option>
+        <option>21:00</option>
+        <option>22:00</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary reserve-submit pointer">Confirm Reservation</button>
+  </form>
+
+
+
+</div>

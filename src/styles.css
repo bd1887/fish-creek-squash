@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-attachment: fixed;
+  background-color: gray;
+  /*background-image:url('./assets/img/squash-court-2.jpg');*/
+}
+.pointer {
+  cursor: pointer;
+}
+
+.content-container {
+  margin-top: 100px;
+  max-width: 800px;
+  min-height: 100vh;
+  background-position:center;
+  background-size:cover;
+  padding: 25px;
+  background-color: #fff;
+}
+
+.red-line {
+  border-color: #d9534f;
+  width: 100%;;
+}
+.custom-form {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+@media screen and (max-width: 770px) {
+  .content-container {
+    margin-top: 66px;
+  }
+  html, body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-image:none;
+  }
+  * {
+    font-size: .95em;
+  }
+  h1, h2, h3, h4, h5 {
+    font-size: 1.1em;
+  }
+}

@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand navbar-dark bg-primary custom-navbar becomes-invisible" [ngClass]="{'becomes-sticky': isTopScrolled || isNotOnIndexRoute}">
+  <div class="navbar mx-auto">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" scrollTo="club-information" offset="100" [routerLink]="isNotOnIndexRoute ? ['/club-information'] : []">Club Information</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" scrollTo="events" offset="100"  [routerLink]="isNotOnIndexRoute ? ['/events'] : []">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" scrollTo="reserve-court" offset="100" [routerLink]="isNotOnIndexRoute ? ['/reserve-court'] : []">Reserve a Court</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" scrollTo="lessons" offset="100" [routerLink]="isNotOnIndexRoute ? ['/lessons'] : []">Lessons</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="navbar fixed-top navbar-dark custom-mobile-navbar bg-primary becomes-visible">
+  <div class="custom-mobile-header-wrapper">
+    <a class="navbar-brand mobile-brand text-light pointer" (click)="redirectTo('/')">Fish Creek Squash</a>
+    <div class="log-in-mobile-wrapper">
+      <i routerLink="/sign-up" class="fa fa-user-plus text-danger pointer" aria-hidden="true"></i>
+      <i routerLink="/log-in" class="fa fa-sign-in pointer" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="custom-mobile-hamburger-wrapper container-fluid">
+    <button class="navbar-toggler pointer" type="button" data-toggle="collapse" data-target="#collapsed-navbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse custom-collapse" id="collapsed-navbar">
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" data-target="#collapsed-navbar" (click)="redirectTo('./club-information')">Club Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" data-target="#collapsed-navbar" (click)="redirectTo('./events')">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" data-target="#collapsed-navbar" (click)="redirectTo('./reserve-court')">Reserve a Court</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" data-target="#collapsed-navbar" (click)="redirectTo('./lessons')">Lessons</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+</nav>
